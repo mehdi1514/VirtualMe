@@ -1,0 +1,21 @@
+<div class="text-center">
+    <h3>Virtual<font color="blue">Me</font></h3>
+    <h6>Just Imagine you are talking to Mehdi and you wanted to ask something</h6>
+    <div style="overflow: scroll; height: 77vh; display: flex; flex-direction: column-reverse;">
+        <div class="container" [ngClass]="{'align-bot' : message.sentBy === 'bot',
+    'align-user': message.sentBy === 'user'}" *ngFor="let message of (messages | async)?.slice().reverse();let last = last">
+        <div class="message" [ngClass]="{'from' : message.sentBy === 'bot',
+                                        'to': message.sentBy === 'user'}">
+            {{ message.content }}
+        </div>
+        <br>
+    </div>
+    </div>
+    <footer>
+        <input type="text" [(ngModel)]="formValue" (keyup.enter)="sendMessage()"
+        style="border-radius: 999px; border: 1px solid grey; outline: none; padding: 5px;">
+        &nbsp;
+        <button class="btn btn-primary" (click)="sendMessage()"
+        style="border-radius: 999px;">Ask</button>
+    </footer>
+</div>

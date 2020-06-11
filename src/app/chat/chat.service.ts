@@ -37,7 +37,7 @@ export class ChatService {
     var index: number = msg.indexOf("weather");
     if(index !== -1){
       if(msg.indexOf("Dubai") !== -1){
-        return this.http.get('http://api.openweathermap.org/data/2.5/weather?q=Dubai&appid=7f714af31d506b2f242c9b8d919b63fb')
+        return this.http.get('https://api.openweathermap.org/data/2.5/weather?q=Dubai&appid=7f714af31d506b2f242c9b8d919b63fb')
         .subscribe(res => {
           var temp: string = (res['main']['temp'] - 273.15).toFixed(0).toString();
           const botMessage = new Message(`It is ${temp}°C in Dubai.`, 'bot');

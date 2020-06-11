@@ -6,22 +6,23 @@ footer {
     height: 80px;
 }
 
+
 .from{
     background-color: #4287f5;
     color: white;
-    padding: 20px;
-    border-top-right-radius: 999px;
-    border-bottom-right-radius: 999px;
-    border-top-left-radius: 999px;
+    padding: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .to{
     background-color: whitesmoke;
     color: black;
-    padding: 20px;
-    border-top-right-radius: 999px;
-    border-bottom-left-radius: 999px;
-    border-top-left-radius: 999px;
+    padding: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .align-bot {

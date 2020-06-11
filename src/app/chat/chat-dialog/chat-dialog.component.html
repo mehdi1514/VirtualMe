@@ -6,7 +6,8 @@
     'align-user': message.sentBy === 'user'}" *ngFor="let message of (messages | async)?.slice().reverse();let last = last">
         <div class="message" [ngClass]="{'from' : message.sentBy === 'bot',
                                         'to': message.sentBy === 'user'}">
-            {{ message.content }}
+            <img *ngIf="message.content.startsWith('http')" [src]="message.content">
+            <p *ngIf="!message.content.startsWith('http')">{{ message.content }}</p>
         </div>
         <br>
     </div>

@@ -1,5 +1,9 @@
 # VirtualMe
 
+A chatbot that answers questions about me.
+
+This web app is hosted at `https://virtualme.herokuapp.com/`
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
 ## Development server

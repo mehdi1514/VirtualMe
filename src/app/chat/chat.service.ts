@@ -44,7 +44,7 @@ export class ChatService {
           this.update(botMessage);
         });
       }
-      return this.http.get('http://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=7f714af31d506b2f242c9b8d919b63fb')
+      return this.http.get('https://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=7f714af31d506b2f242c9b8d919b63fb')
       .subscribe(res => {
         var temp: string = (res['main']['temp'] - 273.15).toFixed(0).toString();
         const botMessage = new Message(`It is ${temp}°C outside.`, 'bot');

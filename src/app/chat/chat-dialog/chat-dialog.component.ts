@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChatService, Message } from '../chat.service';
 import { Observable } from 'rxjs';
-import { scan } from 'rxjs/operators'
+import { scan } from 'rxjs/operators';
 
 @Component({
   selector: 'chat-dialog',

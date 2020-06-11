@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [ChatDialogComponent],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
   ],
   exports: [ChatDialogComponent],
   providers: [ChatService],

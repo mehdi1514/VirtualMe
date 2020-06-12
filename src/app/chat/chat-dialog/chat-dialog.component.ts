@@ -21,8 +21,12 @@ export class ChatDialogComponent implements OnInit {
   }
 
   sendMessage(){
+    var index = this.formValue.toLowerCase().indexOf("birthday");
     this.chatServive.converse(this.formValue);
     this.formValue = '';
+    if(index !== -1){
+      window.open('https://www.youtube.com/watch?v=ykHAwUhjjGE');
+    }
   }
 
 }
